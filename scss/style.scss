@@ -53,13 +53,28 @@ a:hover{
   margin: 0 auto;
 }
 
+.page-up{
+  cursor: pointer;
+  display: block;
+  background-color: #49A144;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 16px;
+  bottom: 25px;
+  z-index: 3;
+  outline: none;
+  border: none;
+}
+
 .header{
   position: fixed;
-  background-color: #FFFFFF;
+  background-color: #fff;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 2;
   box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
   &__inner{
     display: flex;

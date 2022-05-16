@@ -232,6 +232,142 @@ a:hover {
   color: #3B3B3B;
 }
 
+.restaurant {
+  margin-top: 80px;
+  padding: 80px 0;
+  background-image: url(../images/restaurants/Restaurant/restaurant-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.restaurant__card {
+  background-color: #fff;
+  padding: 38px;
+  max-width: 320px;
+  border-radius: 10px;
+}
+
+.restaurant__title {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 400;
+  font-style: normal;
+  color: #1D1D1D;
+  margin-bottom: 54px;
+}
+
+.restaurant__card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurant__time {
+  padding: 8px 16px;
+  background-color: #262626;
+  border-radius: 16px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.menu {
+  padding: 30px 0;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  margin-bottom: 56px;
+}
+
+.menu__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__tabs-item + .menu__tabs-item {
+  margin-right: 40px;
+}
+
+.menu__tabs-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #626262;
+}
+
+.dishes {
+  padding-bottom: 31px;
+}
+
+.dishes__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  margin-bottom: 32px;
+}
+
+.dishes__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dishes__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 430px;
+  width: 470px;
+  margin-bottom: 49px;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  border-radius: 3px;
+}
+
+.dishes__info {
+  padding: 16px 0 16px 16px;
+}
+
+.dishes__name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1D;
+  margin-bottom: 4px;
+}
+
+.dishes__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  color: #626262;
+  margin-bottom: 58px;
+}
+
+.dishes__price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+}
+
 .footer {
   background-color: #262626;
   padding: 40px 0px;
@@ -407,6 +543,9 @@ a:hover {
   .footer-top__item {
     margin-right: 79px;
   }
+  .dishes__item {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -440,6 +579,37 @@ a:hover {
   }
   .restaurants__card-img {
     width: 315px;
+  }
+  .restaurant {
+    background-image: url(../images/restaurants/Restaurant/restaurant-adaptice-bg.jpg);
+    background-size: cover;
+    height: 256px;
+    padding-bottom: 163px;
+    margin-bottom: 110px;
+  }
+  .restaurant__card {
+    position: absolute;
+    left: 10px;
+    top: 205px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    -webkit-box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+            box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+    border-radius: 2px;
+  }
+  .restaurant__card-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .restaurant__title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 40px;
   }
   .footer {
     padding-bottom: 20px;

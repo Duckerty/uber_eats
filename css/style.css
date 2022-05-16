@@ -38,6 +38,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  height: 100vh;
 }
 
 a {
@@ -70,7 +71,7 @@ a:hover {
   height: 60px;
   position: fixed;
   right: 16px;
-  bottom: 25px;
+  bottom: 60px;
   z-index: 3;
   outline: none;
   border: none;
@@ -233,7 +234,7 @@ a:hover {
 
 .footer {
   background-color: #262626;
-  padding: 40px 56px;
+  padding: 40px 0px;
 }
 
 .footer__logo-box {
@@ -367,5 +368,114 @@ a:hover {
   font-size: 11px;
   line-height: 13px;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .page-up {
+    width: 55px;
+    height: 55px;
+  }
+  .shadow {
+    width: 340px;
+    height: 283px;
+  }
+  .restaurants__title {
+    margin-bottom: 25px;
+  }
+  .restaurants__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .restaurants__card {
+    width: 340px;
+  }
+  .restaurants__card-img {
+    width: 340px;
+  }
+  .footer-top__language-select {
+    padding-right: 77px;
+  }
+  .footer-top__item {
+    margin-right: 79px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 315px;
+  }
+  .page-up {
+    width: 45px;
+    height: 45px;
+  }
+  .shadow {
+    width: 315px;
+  }
+  .header__basket {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-right: 20px;
+  }
+  .header__list-item__btn {
+    padding: 10px 15px;
+  }
+  .search__input {
+    width: 98%;
+  }
+  .restaurants__card {
+    width: 315px;
+  }
+  .restaurants__card-imglink {
+    margin-bottom: 8px;
+  }
+  .restaurants__card-img {
+    width: 315px;
+  }
+  .footer {
+    padding-bottom: 20px;
+  }
+  .footer-top {
+    padding-bottom: 0;
+    margin-bottom: 28px;
+  }
+  .footer-top__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-top__item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .footer-top__social-list {
+    margin-bottom: 15px;
+  }
+  .footer-stores {
+    padding-bottom: 25px;
+  }
+  .footer-stores__apple {
+    margin-right: 20px;
+  }
+  .footer-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20px;
+  }
+  .footer-bottom__item {
+    margin-bottom: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
